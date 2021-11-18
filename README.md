@@ -38,9 +38,9 @@ $ brew install kind
 ## 2. KinD Initial Configuration
 
 Setting initial config via YAML
-```
-$ cat kindConfig.yaml
 
+`$ cat kindConfig.yaml`
+```
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
@@ -74,9 +74,8 @@ First, disable the default CNI created by KinD
 Deploy KinD
 Setup your favourite CNI
 
+`$ cat kindConfig.yaml`
 ```
-$ cat kindConfig.yaml
-
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
