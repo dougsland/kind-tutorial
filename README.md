@@ -94,7 +94,7 @@ networking:
 Requires:
 
 Podman v3.0 or later
-Add the following into /etc/default/grub and update grub
+Add the following into `/etc/default/grub` and update grub
 ```
 GRUB_CMDLINE_LINUX="systemd.unified_cgroup_hierarchy="
 ````
@@ -109,7 +109,7 @@ Reboot the host
 $ sudo reboot
 ```
 
-Set delegate.conf into /etc/systemd/system/user@.service.d/
+Set delegate.conf into `/etc/systemd/system/user@.service.d/`
 ```
 $ mkdir /etc/systemd/system/user@.service.d/
 $ vi delegate.conf
@@ -120,7 +120,7 @@ $ sudo systemctl daemon-reload
 ```
 
 
-Set /etc/modules-load.d/iptables.conf
+Set `/etc/modules-load.d/iptables.conf`
 ```
 $ mkdir -p /etc/systemd/system/user@.service.d/
 $ vi delegate.conf
