@@ -151,6 +151,12 @@ kubectl cluster-info --context kind-kind
 Thanks for using kind! 😊
 ```
 
+TIP: Making an alias helps your life :)
+```
+$ alias kind="KIND_EXPERIMENTAL_PROVIDER=podman kind" >> ~/.bashrc
+$ source ~/.bashrc
+```
+
 ### Docker
 Requires: Docker: 20.10 or later, [for more info click here](https://kind.sigs.k8s.io/docs/user/rootless)
 
