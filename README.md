@@ -87,6 +87,11 @@ networking:
   disableDefaultCNI: true
 ```
 
+Adding Calico CNI
+```
+$ kubectl apply -f https://docs.projectcalico.org/v3.21/manifests/calico.yaml
+```
+
 ## 5. Rootless
 
 ### Podman
